@@ -48,6 +48,8 @@
     }
     version *thisversion = [versions objectAtIndex:indexPath.row];
     cell.textLabel.text = thisversion.versionname;
+    cell.imageView.image=[UIImage imageNamed:@"androidApps.png"];
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 
@@ -61,6 +63,15 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    version *thisversion = [versions objectAtIndex:indexPath.row];
+    UIAlertView *popup = [[UIAlertView alloc]initWithTitle:thisversion.versionname message:thisversion.versiondetail delegate:nil cancelButtonTitle:@"ok" otherButtonTitles : nil];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [popup show];
+    [popup release];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

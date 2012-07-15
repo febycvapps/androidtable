@@ -88,7 +88,6 @@
 				872EBD5915AE8A2700EB6201 /* ViewController.m */,
 				87A8490315AEBE9E007261BB /* version.h */,
 				87A8490415AEBE9E007261BB /* version.m */,
-				872EBD6915AE8D0300EB6201 /* androidApps.png */,
 				872EBD5B15AE8A2700EB6201 /* ViewController.xib */,
 				872EBD4D15AE8A2700EB6201 /* Supporting Files */,
 			);
@@ -98,6 +97,7 @@
 		872EBD4D15AE8A2700EB6201 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				872EBD6915AE8D0300EB6201 /* androidApps.png */,
 				872EBD4E15AE8A2700EB6201 /* android-Info.plist */,
 				872EBD4F15AE8A2700EB6201 /* InfoPlist.strings */,
 				872EBD5215AE8A2700EB6201 /* main.m */,
